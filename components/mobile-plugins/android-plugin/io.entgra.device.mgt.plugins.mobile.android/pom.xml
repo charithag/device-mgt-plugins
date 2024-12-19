@@ -195,6 +195,7 @@
         <dependency>
             <groupId>org.wso2.orbit.org.apache.tomcat</groupId>
             <artifactId>jdbc-pool</artifactId>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.wso2.orbit.com.h2database</groupId>

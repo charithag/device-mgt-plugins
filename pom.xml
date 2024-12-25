@@ -988,14 +988,17 @@
     </dependencyManagement>
 
     <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <project.java.version>11</project.java.version>
 
         <!-- Carbon Device Management -->
         <io.entgra.device.mgt.core.version>6.0.2-SNAPSHOT</io.entgra.device.mgt.core.version>
-        <io.entgra.device.mgt.core.version.range>[6.0.0, 7.0.0)</io.entgra.device.mgt.core.version.range>
+        <io.entgra.device.mgt.core.version.range>[6.0,7)</io.entgra.device.mgt.core.version.range>
 
         <!-- Carbon Device Management Plugins -->
         <io.entgra.device.mgt.plugins.version>7.0.0-SNAPSHOT</io.entgra.device.mgt.plugins.version>
-        <io.entgra.device.mgt.plugins.version.range>[7.0.0, 8.0.0)</io.entgra.device.mgt.plugins.version.range>
+        <io.entgra.device.mgt.plugins.version.range>[7.0,8)</io.entgra.device.mgt.plugins.version.range>
 
         <!-- Android Agent Artifact Version-->
         <android.agent.version>4.0.0</android.agent.version>
@@ -1126,10 +1129,10 @@
     </properties>
 
     <scm>
-        <url>https://repository.entgra.net/community/device-mgt-plugins.git</url>
-        <developerConnection>scm:git:https://repository.entgra.net/community/device-mgt-plugins.git
+        <url>https://github.com/entgra/device-mgt-plugins.git</url>
+        <developerConnection>scm:git:https://github.com/entgra/device-mgt-plugins.git
         </developerConnection>
-        <connection>scm:git:https://repository.entgra.net/community/device-mgt-plugins.git</connection>
+        <connection>scm:git:https://github.com/entgra/device-mgt-plugins.git</connection>
         <tag>v6.0.14</tag>
     </scm>
 
@@ -1150,9 +1153,17 @@
                     <artifactId>maven-compiler-plugin</artifactId>
                     <version>3.8.1</version>
                     <configuration>
-                        <encoding>UTF-8</encoding>
-                        <source>11</source>
-                        <target>11</target>
+                        <source>${project.java.version}</source>
+                        <target>${project.java.version}</target>
+                        <encoding>${project.build.sourceEncoding}</encoding>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-resources-plugin</artifactId>
+                    <version>3.3.0</version>
+                    <configuration>
+                        <encoding>${project.build.sourceEncoding}</encoding>
                     </configuration>
                 </plugin>
                 <plugin>

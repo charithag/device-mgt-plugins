@@ -46,8 +46,7 @@
 						<Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
 						<Bundle-Name>${project.artifactId}</Bundle-Name>
 						<Private-Package>
-							io.entgra.device.mgt.plugins.input.adapter.extension.internal,
-							io.entgra.device.mgt.plugins.input.adapter.extension.internal.*
+							io.entgra.device.mgt.plugins.input.adapter.extension.internal
 						</Private-Package>
 						<Export-Package>
 							io.entgra.device.mgt.plugins.input.adapter.extension.*,
@@ -55,15 +54,15 @@
 						</Export-Package>
 						<Import-Package>
 							com.jayway.jsonpath;version="[0.9,1)",
-							io.entgra.device.mgt.plugins.input.adapter.extension,
-							io.entgra.device.mgt.plugins.input.adapter.extension.internal,
-							io.entgra.device.mgt.plugins.input.adapter.extension.transformer,
-							io.entgra.device.mgt.plugins.input.adapter.extension.validator,
+							io.entgra.device.mgt.plugins.input.adapter.extension;version="[7.0,8)",
+							io.entgra.device.mgt.plugins.input.adapter.extension.internal;version="[7.0,8)",
+							io.entgra.device.mgt.plugins.input.adapter.extension.transformer;version="[7.0,8)",
+							io.entgra.device.mgt.plugins.input.adapter.extension.validator;version="[7.0,8)",
 							org.apache.commons.logging;version="[1.2,2)",
 							org.json.simple,
 							org.json.simple.parser,
-							org.osgi.framework.*;version="${imp.package.version.osgi.framework}",
-							org.osgi.service.*;version="${imp.package.version.osgi.service}"
+							org.osgi.framework;version="${imp.package.version.osgi.framework}",
+							org.osgi.service.component;version="${imp.package.version.osgi.service}",
 						</Import-Package>
 					</instructions>
 				</configuration>

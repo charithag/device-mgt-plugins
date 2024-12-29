@@ -140,7 +140,8 @@ public class DeviceManagementProviderServiceMock implements DeviceManagementProv
     }
 
     @Override
-    public PaginationResult createBillingFile(int i, String s, Timestamp timestamp, Timestamp timestamp1) throws DeviceManagementException {
+    public PaginationResult createBillingFile(int i, String s, Timestamp timestamp, Timestamp timestamp1)
+            throws DeviceManagementException {
         return null;
     }
 
@@ -480,7 +481,8 @@ public class DeviceManagementProviderServiceMock implements DeviceManagementProv
     }
 
     @Override
-    public List<DeviceStatus> getDeviceStatusHistory(Device device, Date date, Date date1, boolean b) throws DeviceManagementException {
+    public List<DeviceStatus> getDeviceStatusHistory(Device device, Date date, Date date1, boolean b)
+            throws DeviceManagementException {
         return null;
     }
 
@@ -490,7 +492,8 @@ public class DeviceManagementProviderServiceMock implements DeviceManagementProv
     }
 
     @Override
-    public List<DeviceStatus> getDeviceCurrentEnrolmentStatusHistory(Device device, Date date, Date date1) throws DeviceManagementException {
+    public List<DeviceStatus> getDeviceCurrentEnrolmentStatusHistory(Device device, Date date, Date date1)
+            throws DeviceManagementException {
         return null;
     }
 
@@ -611,12 +614,14 @@ public class DeviceManagementProviderServiceMock implements DeviceManagementProv
         return null;
     }
 
-    @Override public List<Activity> getFilteredActivities(String operationCode, int limit, int offset)
+    @Override
+    public List<Activity> getFilteredActivities(String operationCode, int limit, int offset)
             throws OperationManagementException {
         return null;
     }
 
-    @Override public int getTotalCountOfFilteredActivities(String operationCode) throws OperationManagementException {
+    @Override
+    public int getTotalCountOfFilteredActivities(String operationCode) throws OperationManagementException {
         return 0;
     }
 
@@ -627,10 +632,14 @@ public class DeviceManagementProviderServiceMock implements DeviceManagementProv
     }
 
     @Override
-    public int getActivityCountUpdatedAfter(long l) throws OperationManagementException { return 0; }
+    public int getActivityCountUpdatedAfter(long l) throws OperationManagementException {
+        return 0;
+    }
 
     @Override
-    public int getActivityCountUpdatedAfterByUser(long l, String s) throws OperationManagementException { return 0; }
+    public int getActivityCountUpdatedAfterByUser(long l, String s) throws OperationManagementException {
+        return 0;
+    }
 
     @Override
     public List<MonitoringOperation> getMonitoringOperationList(String s) {
@@ -800,10 +809,14 @@ public class DeviceManagementProviderServiceMock implements DeviceManagementProv
     }
 
     @Override
-    public List<String> getAppVersions(String s) throws ApplicationManagementException { return null; }
+    public List<String> getAppVersions(String s) throws ApplicationManagementException {
+        return null;
+    }
 
     @Override
-    public int getFunctioningDevicesInSystem() throws DeviceManagementException { return 0; }
+    public int getFunctioningDevicesInSystem() throws DeviceManagementException {
+        return 0;
+    }
 
     @Override
     public boolean isOperationExist(DeviceIdentifier deviceIdentifier, int i) throws OperationManagementException {
@@ -816,7 +829,9 @@ public class DeviceManagementProviderServiceMock implements DeviceManagementProv
     }
 
     @Override
-    public DeviceEnrollmentInvitationDetails getDeviceEnrollmentInvitationDetails(String s) { return null; }
+    public DeviceEnrollmentInvitationDetails getDeviceEnrollmentInvitationDetails(String s) {
+        return null;
+    }
 
     @Override
     public void triggerCorrectiveActions(String s, String s1, List<String> list, List<ConfigurationEntry> list1)
@@ -843,17 +858,21 @@ public class DeviceManagementProviderServiceMock implements DeviceManagementProv
     }
 
     @Override
-    public List<DeviceActivity> getDeviceActivities(ActivityPaginationRequest activityPaginationRequest) throws OperationManagementException {
+    public List<DeviceActivity> getDeviceActivities(ActivityPaginationRequest activityPaginationRequest)
+            throws OperationManagementException {
         return null;
     }
 
     @Override
-    public int getDeviceActivitiesCount(ActivityPaginationRequest activityPaginationRequest) throws OperationManagementException {
+    public int getDeviceActivitiesCount(ActivityPaginationRequest activityPaginationRequest)
+            throws OperationManagementException {
         return 0;
     }
 
     @Override
-    public License getLicenseConfig(String s) throws DeviceManagementException { return null; }
+    public License getLicenseConfig(String s) throws DeviceManagementException {
+        return null;
+    }
 
     @Override
     public PaginationResult getDevicesDetails(PaginationRequest paginationRequest, List<Integer> list, String s)
@@ -882,8 +901,9 @@ public class DeviceManagementProviderServiceMock implements DeviceManagementProv
     }
 
     @Override
-    public List<Application> getInstalledApplicationsOnDevice(Device device, int i, int i1) throws DeviceManagementException {
-        return null;
+    public List<Application> getInstalledApplicationsOnDevice(Device device, int i, int i1, int i2)
+            throws DeviceManagementException {
+        return List.of();
     }
 
     @Override
@@ -902,20 +922,24 @@ public class DeviceManagementProviderServiceMock implements DeviceManagementProv
     }
 
     @Override
-    public void deleteDeviceDataByTenantId(int i) throws DeviceManagementException {}
+    public void deleteDeviceDataByTenantId(int i) throws DeviceManagementException {
+    }
 
     @Override
-    public OwnerWithDeviceDTO getOwnersWithDeviceIds(String s, int i, String s1, String s2, String s3) throws DeviceManagementDAOException {
+    public OwnerWithDeviceDTO getOwnersWithDeviceIds(String s, int i, String s1, String s2, String s3)
+            throws DeviceManagementDAOException {
         return null;
     }
 
     @Override
-    public OwnerWithDeviceDTO getOwnerWithDeviceByDeviceId(int i, String s, String s1, String s2) throws DeviceManagementDAOException {
+    public OwnerWithDeviceDTO getOwnerWithDeviceByDeviceId(int i, String s, String s1, String s2)
+            throws DeviceManagementDAOException {
         return null;
     }
 
     @Override
-    public List<DeviceDetailsDTO> getDevicesByTenantId(int i, int i1, String s, String s1) throws DeviceManagementDAOException {
+    public List<DeviceDetailsDTO> getDevicesByTenantId(int i, int i1, String s, String s1)
+            throws DeviceManagementDAOException {
         return Collections.emptyList();
     }
 
@@ -953,12 +977,14 @@ public class DeviceManagementProviderServiceMock implements DeviceManagementProv
     }
 
     @Override
-    public List<Device> getDevicesByDeviceIds(PaginationRequest paginationRequest, List<Integer> list) throws DeviceManagementException {
+    public List<Device> getDevicesByDeviceIds(PaginationRequest paginationRequest, List<Integer> list)
+            throws DeviceManagementException {
         return null;
     }
 
     @Override
-    public int getDeviceCountByDeviceIds(PaginationRequest paginationRequest, List<Integer> list) throws DeviceManagementException {
+    public int getDeviceCountByDeviceIds(PaginationRequest paginationRequest, List<Integer> list)
+            throws DeviceManagementException {
         return 0;
     }
 

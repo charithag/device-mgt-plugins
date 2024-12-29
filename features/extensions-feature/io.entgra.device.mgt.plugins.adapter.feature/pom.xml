@@ -18,7 +18,8 @@
   ~ under the License.
   -->
 
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
     <parent>
         <groupId>io.entgra.device.mgt.plugins</groupId>
@@ -63,28 +64,28 @@
             <groupId>io.entgra.device.mgt.plugins</groupId>
             <artifactId>io.entgra.device.mgt.plugins.input.adapter.xmpp</artifactId>
         </dependency>
-		<dependency>
-			<groupId>io.entgra.device.mgt.plugins</groupId>
-			<artifactId>io.entgra.device.mgt.plugins.input.adapter.thrift</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.wso2.carbon.analytics-common</groupId>
-			<artifactId>org.wso2.carbon.event.input.adapter.wso2event</artifactId>
-		</dependency>
+        <dependency>
+            <groupId>io.entgra.device.mgt.plugins</groupId>
+            <artifactId>io.entgra.device.mgt.plugins.input.adapter.thrift</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.wso2.carbon.analytics-common</groupId>
+            <artifactId>org.wso2.carbon.event.input.adapter.wso2event</artifactId>
+        </dependency>
         <dependency>
             <groupId>com.jayway.jsonpath</groupId>
             <artifactId>json-path</artifactId>
         </dependency>
-		<dependency>
-			<groupId>io.github.openfeign</groupId>
-			<artifactId>feign-jaxrs</artifactId>
-			<version>${io.github.openfeign.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>io.github.openfeign</groupId>
-			<artifactId>feign-gson</artifactId>
-			<version>${io.github.openfeign.version}</version>
-		</dependency>
+        <dependency>
+            <groupId>io.github.openfeign</groupId>
+            <artifactId>feign-jaxrs</artifactId>
+            <version>${io.github.openfeign.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.github.openfeign</groupId>
+            <artifactId>feign-gson</artifactId>
+            <version>${io.github.openfeign.version}</version>
+        </dependency>
     </dependencies>
     <build>
         <plugins>
@@ -102,7 +103,8 @@
                             <artifactItems>
                                 <artifactItem>
                                     <groupId>io.entgra.device.mgt.plugins</groupId>
-                                    <artifactId>io.entgra.device.mgt.plugins.output.adapter.websocket.endpoint</artifactId>
+                                    <artifactId>io.entgra.device.mgt.plugins.output.adapter.websocket.endpoint
+                                    </artifactId>
                                     <version>${io.entgra.device.mgt.plugins.version}</version>
                                     <type>war</type>
                                     <overWrite>true</overWrite>

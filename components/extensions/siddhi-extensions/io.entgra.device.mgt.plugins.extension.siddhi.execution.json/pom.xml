@@ -72,8 +72,7 @@
                         <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
                         <Bundle-Name>${project.artifactId}</Bundle-Name>
                         <Export-Package>
-                            io.entgra.device.mgt.plugins.extension.siddhi.execution.json,
-                            io.entgra.device.mgt.plugins.extension.siddhi.execution.json.*
+                            io.entgra.device.mgt.plugins.extension.siddhi.execution.json
                         </Export-Package>
                         <Import-Package>
                             org.json;version="[3.0,4)",

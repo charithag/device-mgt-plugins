@@ -222,8 +222,7 @@
                         <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
                         <Bundle-Name>${project.artifactId}</Bundle-Name>
                         <Export-Package>
-                            io.entgra.device.mgt.plugins.extension.siddhi.device,
-                            io.entgra.device.mgt.plugins.extension.siddhi.device.*
+                            io.entgra.device.mgt.plugins.extension.siddhi.device
                         </Export-Package>
                         <Import-Package>
                             feign;version="[11.0,12)",
@@ -245,10 +244,12 @@
                             io.entgra.device.mgt.plugins.extension.siddhi.device.client.dto,
                             io.entgra.device.mgt.plugins.extension.siddhi.device.client.exception,
                             javax.annotation;version="[1.0,2)",
-                            javax.crypto,javax.crypto.spec,
+                            javax.crypto,
+                            javax.crypto.spec,
                             javax.net,
                             javax.net.ssl,
-                            javax.security.auth.x500,javax.xml.bind;version="[0.0,1)",
+                            javax.security.auth.x500,
+                            javax.xml.bind;version="[0.0,1)",
                             javax.xml.bind.annotation;version="[0.0,1)",
                             javax.xml.parsers,
                             org.apache.commons.lang;version="[2.6,3)",

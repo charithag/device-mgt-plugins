@@ -75,12 +75,10 @@
                         <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
                         <Bundle-Name>${project.artifactId}</Bundle-Name>
                         <Private-Package>
-                            io.entgra.device.mgt.plugins.output.adapter.xmpp.internal,
-                            io.entgra.device.mgt.plugins.output.adapter.xmpp.internal.*
+                            io.entgra.device.mgt.plugins.output.adapter.xmpp.internal
                         </Private-Package>
                         <Export-Package>
                             !io.entgra.device.mgt.plugins.output.adapter.xmpp.internal,
-                            !io.entgra.device.mgt.plugins.output.adapter.xmpp.internal.*,
                             io.entgra.device.mgt.plugins.output.adapter.xmpp.*,
                         </Export-Package>
                         <Import-Package>

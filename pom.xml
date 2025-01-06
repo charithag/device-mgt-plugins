@@ -993,7 +993,7 @@
         <project.java.version>11</project.java.version>
 
         <!-- Carbon Device Management -->
-        <io.entgra.device.mgt.core.version>6.0.3-SNAPSHOT</io.entgra.device.mgt.core.version>
+        <io.entgra.device.mgt.core.version>6.0.4-SNAPSHOT</io.entgra.device.mgt.core.version>
         <io.entgra.device.mgt.core.version.range>[6.0,7)</io.entgra.device.mgt.core.version.range>
 
         <!-- Carbon Device Management Plugins -->
